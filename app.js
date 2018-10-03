@@ -4,9 +4,9 @@ const app = express();
 app.set('view engine', 'ejs');
 app.use(express.static(`${__dirname}/public`));
 
-let thing = randomMath();
+let question = randomMath();
 app.get('/', (req, res) => {
-  res.render('home', { thing });
+  res.render('home', { question });
 });
 
 const port = process.env.PORT || 1234;
