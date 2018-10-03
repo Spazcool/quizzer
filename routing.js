@@ -42,14 +42,12 @@ router.use(session({secret: 'mathematics'}))
       answer: req.body.answer,
       correct: true
     });
-    // true counter ++
   }else{
     req.session.asked.push({
       question: req.body.question,
       answer: req.body.answer,
       correct: false
     });
-    // false counter ++
   }
   console.log(req.session.asked);
   res.redirect('/');
