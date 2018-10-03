@@ -1,6 +1,6 @@
 function randomMath(){
-  let a = 5;
-  let b = 8;
+  let a = Math.floor(Math.random() * 10);
+  let b = Math.floor(Math.random() * 10);
   let abString = a + ' + ' + b;
   return abString;
 }
