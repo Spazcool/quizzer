@@ -1,0 +1,38 @@
+
+// .get('/recipe/:id', (req, res) => {
+//   res.render('update.ejs', {
+//     id: req.params.id,
+//     recipe: req.session.recipes[req.params.id].recipe,
+//     ingredients: req.session.recipes[req.params.id].ingredients,
+//     directions: req.session.recipes[req.params.id].directions
+//   });
+// })
+
+
+
+// .post('/update/:id', urlencodedParser, (req, res) => {
+//   req.session.recipes[req.params.id].recipe = req.body.newername;
+//   req.session.recipes[req.params.id].ingredients = req.body.neweringredients;
+//   req.session.recipes[req.params.id].directions = req.body.newerdirections;
+//   res.redirect('/');
+// })
+//
+// .get('/delete/:id', (req, res) => {
+//   if (req.params.id != '') {
+//     req.session.recipes.splice(req.params.id, 1);
+//   }
+//   res.redirect('/');
+// })
+
+// req.session.recipes.push({
+//   recipe: req.body.newrecipe,
+//   ingredients: req.body.newingredients,
+//   directions: req.body.newdirections
+// });
+
+// if (req.body.answer == '') {
+//   req.session.recipes.push({
+//     recipe: 'No description.',
+//     ingredients: 'No description.',
+//     directions: 'No description.'
+//   });
