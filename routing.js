@@ -31,6 +31,7 @@ router.use(session({secret: 'mathematics'}))
     // false counter ++
   // }
   console.log(req.body.answer);
+  console.log(req.body.question);
   res.redirect('/');
 })
 

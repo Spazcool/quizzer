@@ -1,14 +1,13 @@
 <% include ./partials/header %>
   <div>
     <p>Question:</p>
-    <div id="question"></div>
     Solve: <%- question %>
   </div>
   <div>
     <p>Answer:</p>
-    <div id="answer"></div>
     <form action="/check/" method="post" class="forms">
-      <input type="text" name="answer" id="answer" autofocus />
+      <input name="answer" type="text" autofocus />
+      <input name="question" type="hidden" value="<%- question %>" />
       <input type="submit" value="Submit">
     </form>
   </div>
