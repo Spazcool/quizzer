@@ -1,7 +1,8 @@
 function checkAnswer(answer, question){
-  if(question.eval() === answer){
+  if(answer == answer){
     return true;
   }
+  return false;
 }
 
 module.exports = {
