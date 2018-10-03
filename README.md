@@ -17,7 +17,7 @@ You can check if you already have Node.JS & its very useful package manager NPM 
 
   `npm -v`
 
-Follow link for instructions on how to install Node.JS:
+Follow links for instructions on how to install Node.JS:
   * [Node.JS](https://nodejs.org/en/download/package-manager/)
   * [Treehouse Node Install Instructions](https://treehouse.github.io/installation-guides/mac/node-mac.html)
 
@@ -91,7 +91,7 @@ Keep the message with the quotation marks short and relevant to the changes made
 #### 6. Create a pull request on github & merge with master branch
 Follow the link below, the gif on that page is all you'll need to figure this out. Once you have made a pull request it is up to us to discuss the changes made and whether or not they warrant inclusion into the master branch.
 
-  [Pull Request](https://services.github.com/on-demand/github-cli/open-pull-request-github)
+  [How to Pull Request](https://services.github.com/on-demand/github-cli/open-pull-request-github)
 
 If the pull request is ready to merge with the master branch type the following:
 Switch to master branch & make sure it's current.
@@ -116,7 +116,7 @@ Push the now merged master branch to the remote/online repository.
 
   `git push origin master`
 
-#### 6. Refresh local repository & delete old branches
+#### 7. Refresh local repository & delete old branches
 Once the changes are integrated into the remote master branch refresh your local repository.
 
   `git checkout master`
