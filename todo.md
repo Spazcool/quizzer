@@ -1,8 +1,9 @@
-**TODO**
+# **TODO**
 
-  *generateQuestion:
-    ** needs to return something more complex than a simple string, perhaps an array a la [var a, operation, var b]
+## generateQuestion:
+  * needs to return something more complex than a simple string, perhaps an array a la [var a, operation, var b]
 
-  *app
+## app
 
-  *home
+## home
+  * Refreshing browser resets the question, desirable?

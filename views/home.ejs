@@ -1,17 +1,30 @@
 <% include ./partials/header %>
-  <div>
-    <p>Counter:</p>
-    <%- counter %>
-  <div>
-    <p>Question:</p>
-    Solve: <%- question %>
-  </div>
-  <div>
-    <p>Answer:</p>
-    <form action="/check/" method="post" class="forms">
-      <input name="answer" type="text" autofocus />
-      <input name="question" type="hidden" value="<%- question %>" />
-      <input type="submit" value="Submit">
-    </form>
-  </div>
+<% let falseCount = 0; %>
+<% let trueCount = 0; %>
+
+<div>
+  <p>Counter:</p>
+  <% counter.forEach(function(answer, index) { %>
+    <% if(answer.correct == true){ %>
+      <% trueCount += 1; %>
+    <% }else{ %>
+      <% falseCount += 1; %>
+    <% } %>
+  <% }) %>
+  Total: <%- counter.length %> <br/>
+  True: <%= trueCount %> <br/>
+  False: <%= falseCount %> <br/>
+<div>
+  <p>Question:</p>
+  Solve: <%- question %>
+</div>
+<div>
+  <p>Answer:</p>
+  <form action="/check/" method="post" class="forms">
+    <input name="answer" type="text" autofocus />
+    <input name="question" type="hidden" value="<%- question %>" />
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
 <% include ./partials/footer %>

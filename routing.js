@@ -21,7 +21,7 @@ router.use(session({secret: 'mathematics'}))
 // GET REQUEST = GRAB INFORMATION FROM A LOCATION,
 // IN THIS CASE THE LOCATION IS "/" OR THE ROOT DIRECTORY / HOMEPAGE
 .get('/', (req, res) => {
-  let counter = req.session.asked.length;
+  let counter = req.session.asked;
   let question = randomMath();
   res.render('home', {
     question,
@@ -36,7 +36,7 @@ router.use(session({secret: 'mathematics'}))
   // THE OBJECT THE FOLLOWING LINES ARE REFERENCING IS EMBEDDED IN THE FORM IN THE HOME.EJS FILE
   // console.log(req.body.answer);
   // console.log(req.body.question);
-  if(checkAnswer(req.body.answer, req.body.answer)){
+  if(checkAnswer(req.body.answer, req.body.question)){
     req.session.asked.push({
       question: req.body.question,
       answer: req.body.answer,

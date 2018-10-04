@@ -1,4 +1,5 @@
 function checkAnswer(answer, question){
+  console.log(question);
   if(answer == answer){
     return true;
   }
