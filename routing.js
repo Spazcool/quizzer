@@ -49,7 +49,7 @@ router.use(session({secret: 'mathematics'}))
       correct: false
     });
   }
-  console.log(req.session.asked);
+  // console.log(req.session.asked);
   res.redirect('/');
 })
 
